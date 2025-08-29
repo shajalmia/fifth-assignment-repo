@@ -49,55 +49,65 @@ document.getElementById("heart9").addEventListener("click", function (e) {
 });
 
 //Call Button Function:
-function coinCount(id) {
+function coinCount(id, alerts) {
   const coinCount = document.getElementById("coin-count");
   const coinCountValue = coinCount.innerText;
   const coinCountValueNumber = parseInt(coinCountValue);
   console.log(coinCountValueNumber);
   const newCoinValue = coinCountValueNumber - 20;
-  if (newCoinValue < 20) {
+  if (newCoinValue >= 20) {
+    alert(alerts);
+  } else {
     alert("Your Coin Is Less Than 20 You Cannot Call.");
     return;
   }
   document.getElementById("coin-count").innerText = newCoinValue;
-  alert("Calling Nantional Emergency Service 999...");
 }
 
 //Call Button press:
 
 document.getElementById("btn-call1").addEventListener("click", function (e) {
   e.preventDefault();
-  coinCount("btn-call1");
+  coinCount("btn-call1", "Calling Nantional Emergency Service 999...");
 });
+
 document.getElementById("btn-call2").addEventListener("click", function (e) {
   e.preventDefault();
-  coinCount("btn-call2");
+  coinCount("btn-call2", "Police Helpline Number 999...");
 });
+
 document.getElementById("btn-call3").addEventListener("click", function (e) {
   e.preventDefault();
-  coinCount("btn-call3");
+  coinCount("btn-call3", "Fire Service Number999...");
 });
+
 document.getElementById("btn-call4").addEventListener("click", function (e) {
   e.preventDefault();
-  coinCount("btn-call4");
+  coinCount("btn-call4", "Ambulance Service 1994-999999...");
 });
+
 document.getElementById("btn-call5").addEventListener("click", function (e) {
   e.preventDefault();
-  coinCount("btn-call5");
+  coinCount("btn-call5", "Women and Child Helpline 109...");
 });
+
 document.getElementById("btn-call6").addEventListener("click", function (e) {
   e.preventDefault();
-  coinCount("btn-call6");
+  coinCount("btn-call6", "Anti-Corruption Helpline 999...");
 });
+
 document.getElementById("btn-call7").addEventListener("click", function (e) {
   e.preventDefault();
-  coinCount("btn-call7");
+  coinCount("btn-call7", "Electricity Helpline 16216...");
 });
+
 document.getElementById("btn-call8").addEventListener("click", function (e) {
   e.preventDefault();
-  coinCount("btn-call8");
+  coinCount("btn-call8", "Brac Helpline 16445...");
 });
+
 document.getElementById("btn-call9").addEventListener("click", function (e) {
   e.preventDefault();
-  coinCount("btn-call9");
+
+  coinCount("btn-call9", "Bangladesh Railway Helpline 163...");
 });
