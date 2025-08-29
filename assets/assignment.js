@@ -112,6 +112,14 @@ document.getElementById("btn-call9").addEventListener("click", function (e) {
   coinCount("btn-call9", "Bangladesh Railway Helpline 163...");
 });
 
+//Time Update
+function timeUpdate(id) {
+  const timeElement = document.getElementById(id);
+  const currentTime = new Date();
+  const formattedTime = currentTime.toLocaleTimeString();
+  timeElement.innerHTML = formattedTime;
+}
+
 //Call History Section
 
 //Emergency
@@ -119,6 +127,7 @@ document.getElementById("btn-call1").addEventListener("click", function (e) {
   e.preventDefault();
   const historyDisplay = document.getElementsByClassName("history-display");
   document.getElementById("national-emergency").style.display = "block";
+  timeUpdate("time1");
 });
 
 //police-service
@@ -126,6 +135,7 @@ document.getElementById("btn-call2").addEventListener("click", function (e) {
   e.preventDefault();
   const historyDisplay = document.getElementsByClassName("history-display");
   document.getElementById("police-service").style.display = "block";
+  timeUpdate("time2");
 });
 
 //fire-service
@@ -133,6 +143,7 @@ document.getElementById("btn-call3").addEventListener("click", function (e) {
   e.preventDefault();
   const historyDisplay = document.getElementsByClassName("history-display");
   document.getElementById("fire-service").style.display = "block";
+  timeUpdate("time3");
 });
 
 //ambulance-service
@@ -140,6 +151,7 @@ document.getElementById("btn-call4").addEventListener("click", function (e) {
   e.preventDefault();
   const historyDisplay = document.getElementsByClassName("history-display");
   document.getElementById("ambulance-service").style.display = "block";
+  timeUpdate("time4");
 });
 
 //women-child-coruption
@@ -147,6 +159,7 @@ document.getElementById("btn-call5").addEventListener("click", function (e) {
   e.preventDefault();
   const historyDisplay = document.getElementsByClassName("history-display");
   document.getElementById("women-child-coruption").style.display = "block";
+  timeUpdate("time5");
 });
 
 //anti-coruption-service
@@ -154,6 +167,7 @@ document.getElementById("btn-call6").addEventListener("click", function (e) {
   e.preventDefault();
   const historyDisplay = document.getElementsByClassName("history-display");
   document.getElementById("anti-coruption-service").style.display = "block";
+  timeUpdate("time6");
 });
 
 //electricity-service
@@ -161,6 +175,7 @@ document.getElementById("btn-call7").addEventListener("click", function (e) {
   e.preventDefault();
   const historyDisplay = document.getElementsByClassName("history-display");
   document.getElementById("electricity-service").style.display = "block";
+  timeUpdate("time7");
 });
 
 //brac-coruption
@@ -168,6 +183,7 @@ document.getElementById("btn-call8").addEventListener("click", function (e) {
   e.preventDefault();
   const historyDisplay = document.getElementsByClassName("history-display");
   document.getElementById("brac-coruption").style.display = "block";
+  timeUpdate("time8");
 });
 
 //bangladesh-railway-service
@@ -175,6 +191,7 @@ document.getElementById("btn-call9").addEventListener("click", function (e) {
   e.preventDefault();
   const historyDisplay = document.getElementsByClassName("history-display");
   document.getElementById("bangladesh-railway-service").style.display = "block";
+  timeUpdate("time9");
 });
 
 //Clear Button
@@ -188,7 +205,15 @@ document.getElementById("btn-clear").addEventListener("click", function (e) {
 
 //Time Update
 
-const timeElement = document.getElementById("time");
-const currentTime = new Date();
-const formattedTime = currentTime.toLocaleTimeString();
-timeElement.innerHTML = formattedTime;
+// function timeUpdate(id){
+// const timeElement = document.getElementById(id);
+// const currentTime = new Date();
+// const formattedTime = currentTime.toLocaleTimeString();
+// timeElement.innerHTML = formattedTime;
+
+// }
+
+// const timeElement = document.getElementById("time");
+// const currentTime = new Date();
+// const formattedTime = currentTime.toLocaleTimeString();
+// timeElement.innerHTML = formattedTime;
