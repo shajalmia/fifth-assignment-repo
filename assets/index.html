@@ -347,6 +347,7 @@
           </div>
         </div>
 
+        <!--History Container-->
         <div
           class="call-history-container flex-column p-[24px] bg-[#FFFFFF] rounded-[12px]"
         >
@@ -360,15 +361,18 @@
               <p>Call History</p>
             </div>
             <button
+            id="btn-clear"
               class="btn-callhistory w-[100px] h-[50px] text-white rounded-[50px] bg-[#00a63e]"
             >
               Clear
             </button>
           </div>
 
-          <div class="callhistory-down">
+          <div  class="callhistory-down">
+
             <div
-              class="national-emergency-service-history flex justify-between items-center mb-[20px] w-[352px] h-[80px] p-[5px] rounded-[8px] bg-[#fafafa]"
+            id="national-emergency"
+              class="hidden history-display national-emergency-service-history flex justify-between items-center mb-[20px] w-[352px] h-[80px] p-[5px] rounded-[8px] bg-[#fafafa]"
             >
               <div class="fire-history-name-number">
                 <h3 class="font-bold text-[18px]">National Emergency Number</h3>
@@ -381,7 +385,8 @@
             </div>
 
             <div
-              class="police-service-history flex justify-between items-center mb-[20px] w-[352px] h-[80px] p-[5px] rounded-[8px] bg-[#fafafa]"
+            id="police-service"
+              class="hidden history-display police-service-history flex justify-between items-center mb-[20px] w-[352px] h-[80px] p-[5px] rounded-[8px] bg-[#fafafa]"
             >
               <div class="fire-history-name-number">
                 <h3 class="font-bold text-[18px]">Police Helpline Number</h3>
@@ -394,7 +399,8 @@
             </div>
 
             <div
-              class="fire-service-history flex justify-between items-center mb-[20px] w-[352px] h-[80px] p-[5px] rounded-[8px] bg-[#fafafa]"
+            id="fire-service"
+              class="hidden history-display fire-service-history flex justify-between items-center mb-[20px] w-[352px] h-[80px] p-[5px] rounded-[8px] bg-[#fafafa]"
             >
               <div class="fire-history-name-number">
                 <h3 class="font-bold text-[18px]">Fire Service Number</h3>
@@ -407,7 +413,8 @@
             </div>
 
             <div
-              class="ambulance-service-history flex justify-between items-center mb-[20px] w-[352px] h-[80px] p-[5px] rounded-[8px] bg-[#fafafa]"
+            id="ambulance-service"
+              class="hidden history-display ambulance-service-history flex justify-between items-center mb-[20px] w-[352px] h-[80px] p-[5px] rounded-[8px] bg-[#fafafa]"
             >
               <div class="fire-history-name-number">
                 <h3 class="font-bold text-[18px]">Ambulance Service</h3>
@@ -420,7 +427,8 @@
             </div>
 
             <div
-              class="women-child-coruption-child-service-history flex justify-between items-center mb-[20px] w-[352px] h-[80px] p-[5px] rounded-[8px] bg-[#fafafa]"
+            id="women-child-coruption"
+              class="hidden history-display women-child-coruption-child-service-history flex justify-between items-center mb-[20px] w-[352px] h-[80px] p-[5px] rounded-[8px] bg-[#fafafa]"
             >
               <div class="fire-history-name-number">
                 <h3 class="font-bold text-[18px]">Women & Child Helpline</h3>
@@ -433,7 +441,8 @@
             </div>
 
             <div
-              class="anti-coruption-service-history flex justify-between items-center mb-[20px] w-[352px] h-[80px] p-[5px] rounded-[8px] bg-[#fafafa]"
+            id="anti-coruption-service"
+              class="hidden history-display anti-coruption-service-history flex justify-between items-center mb-[20px] w-[352px] h-[80px] p-[5px] rounded-[8px] bg-[#fafafa]"
             >
               <div class="fire-history-name-number">
                 <h3 class="font-bold text-[18px]">Anti-Corruption Helpline</h3>
@@ -446,7 +455,8 @@
             </div>
 
             <div
-              class="electricity-service-history flex justify-between items-center mb-[20px] w-[352px] h-[80px] p-[5px] rounded-[8px] bg-[#fafafa]"
+            id="electricity-service"
+              class="hidden history-display electricity-service-history flex justify-between items-center mb-[20px] w-[352px] h-[80px] p-[5px] rounded-[8px] bg-[#fafafa]"
             >
               <div class="fire-history-name-number">
                 <h3 class="font-bold text-[18px]">Electricity Helpline</h3>
@@ -459,7 +469,8 @@
             </div>
 
             <div
-              class="brac-coruption-child-service-history flex justify-between items-center mb-[20px] w-[352px] h-[80px] p-[5px] rounded-[8px] bg-[#fafafa]"
+            id="brac-coruption"
+              class="hidden history-display brac-coruption-child-service-history flex justify-between items-center mb-[20px] w-[352px] h-[80px] p-[5px] rounded-[8px] bg-[#fafafa]"
             >
               <div class="fire-history-name-number">
                 <h3 class="font-bold text-[18px]">Brac Helpline</h3>
@@ -472,7 +483,9 @@
             </div>
 
             <div
-              class="bangladesh-railway-service-history flex justify-between items-center mb-[20px] w-[352px] h-[80px] p-[5px] rounded-[8px] bg-[#fafafa]"
+            id="bangladesh-railway-service"
+            
+              class="hidden history-display bangladesh-railway-service-history flex justify-between items-center mb-[20px] w-[352px] h-[80px] p-[5px] rounded-[8px] bg-[#fafafa]"
             >
               <div class="fire-history-name-number">
                 <h3 class="font-bold text-[18px]">
@@ -488,6 +501,7 @@
           </div>
         </div>
       </div>
+
     </main>
 
     <footer></footer>
